@@ -1,7 +1,6 @@
-
 {% set name = "fdupes" %}
-{% set version = "1.6.1" %}
-{% set sha256 = "9d6b6fdb0b8419815b4df3bdfd0aebc135b8276c90bbbe78ebe6af0b88ba49ea" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "8f02e6d855c56f38afdac9ff5ae2becd79cf7b87c31aa7bf9e3620d1bac00bab" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -30,7 +29,7 @@ about:
   license_family: MIT
   license_file: README
   summary: Identify or delete duplicate files
-  description : |
+  description: |
     FDUPES is a program for identifying or deleting duplicate files residing
     within specified directories.
   dev_url: https://github.com/adrianlopezroche/fdupes
